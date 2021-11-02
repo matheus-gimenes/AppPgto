@@ -1,0 +1,18 @@
+<mvc:View
+    controllerName="pagto.controller.ListaPagamento"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+  
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="App Pagamentos">
+                        <content/>
+                    </Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

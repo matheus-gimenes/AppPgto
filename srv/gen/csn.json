@@ -1,0 +1,151 @@
+{
+  "namespace": "app.interactions",
+  "definitions": {
+    "app.interactions.Pagamento": {
+      "kind": "entity",
+      "elements": {
+        "ID_PGTO": {
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "CNPJ_DEB": {
+          "type": "cds.String",
+          "length": 18
+        },
+        "CNPJ_FAV": {
+          "type": "cds.String",
+          "length": 18
+        },
+        "COD_BANCO": {
+          "type": "cds.String",
+          "length": 3
+        },
+        "AGENCIA": {
+          "type": "cds.String",
+          "length": 5
+        },
+        "CONTA": {
+          "type": "cds.String",
+          "length": 12
+        },
+        "EMPRESA": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "TIPO_PAGAMENTO": {
+          "type": "cds.String",
+          "length": 2
+        },
+        "DATA_VENC": {
+          "type": "cds.Date"
+        },
+        "MOEDA": {
+          "type": "cds.String",
+          "length": 3
+        },
+        "VALOR": {
+          "type": "cds.Decimal",
+          "precision": 13,
+          "scale": 2
+        },
+        "COD_STATUS": {
+          "type": "cds.Integer"
+        },
+        "DESC_STAUTS": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "DT_DECISAO": {
+          "type": "cds.Date"
+        },
+        "ID_AUTENTICACAO": {
+          "type": "cds.Integer"
+        },
+        "DATA_ENVIO": {
+          "type": "cds.Date"
+        }
+      }
+    },
+    "CatalogService": {
+      "@source": "interaction_srv.cds",
+      "kind": "service"
+    },
+    "CatalogService.Pagamento": {
+      "kind": "entity",
+      "projection": {
+        "from": {
+          "ref": [
+            "app.interactions.Pagamento"
+          ]
+        }
+      },
+      "elements": {
+        "ID_PGTO": {
+          "key": true,
+          "type": "cds.Integer"
+        },
+        "CNPJ_DEB": {
+          "type": "cds.String",
+          "length": 18
+        },
+        "CNPJ_FAV": {
+          "type": "cds.String",
+          "length": 18
+        },
+        "COD_BANCO": {
+          "type": "cds.String",
+          "length": 3
+        },
+        "AGENCIA": {
+          "type": "cds.String",
+          "length": 5
+        },
+        "CONTA": {
+          "type": "cds.String",
+          "length": 12
+        },
+        "EMPRESA": {
+          "type": "cds.String",
+          "length": 30
+        },
+        "TIPO_PAGAMENTO": {
+          "type": "cds.String",
+          "length": 2
+        },
+        "DATA_VENC": {
+          "type": "cds.Date"
+        },
+        "MOEDA": {
+          "type": "cds.String",
+          "length": 3
+        },
+        "VALOR": {
+          "type": "cds.Decimal",
+          "precision": 13,
+          "scale": 2
+        },
+        "COD_STATUS": {
+          "type": "cds.Integer"
+        },
+        "DESC_STAUTS": {
+          "type": "cds.String",
+          "length": 10
+        },
+        "DT_DECISAO": {
+          "type": "cds.Date"
+        },
+        "ID_AUTENTICACAO": {
+          "type": "cds.Integer"
+        },
+        "DATA_ENVIO": {
+          "type": "cds.Date"
+        }
+      }
+    }
+  },
+  "meta": {
+    "creator": "CDS Compiler v2.10.2",
+    "flavor": "inferred"
+  },
+  "$version": "2.0"
+}
