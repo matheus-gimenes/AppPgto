@@ -17,7 +17,7 @@ sap.ui.define([
 			    this.getView().setModel(oModel);
             },
             onListItemPress: function (oEvent) {
-			    MessageToast.show("Pressed : " + oEvent.getSource().getTitle());
+                MessageToast.show("Pagamento Enviado : " + oEvent.getSource().getTitle());
 		    }
 		});
     });

@@ -4,11 +4,11 @@ sap.ui.define(function() {
 	var Formatter = {
 
 		status :  function (sStatus) {
-				if (sStatus === "Available") {
+				if (sStatus === "Pago") {
 					return "Success";
-				} else if (sStatus === "Out of Stock") {
+				} else if (sStatus === "Pendente") {
 					return "Warning";
-				} else if (sStatus === "Discontinued"){
+				} else if (sStatus === "Com Erro"){
 					return "Error";
 				} else {
 					return "None";
