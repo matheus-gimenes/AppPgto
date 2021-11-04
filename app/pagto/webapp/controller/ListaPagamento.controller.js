@@ -1,3 +1,5 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
+
 // eslint-disable-next-line no-undef
 sap.ui.define([
     "sap/m/MessageToast",
@@ -13,11 +15,14 @@ sap.ui.define([
 
 		return Controller.extend("pagto.controller.ListaPagamento", {
 			onInit: function () {
+                // eslint-disable-next-line no-undef
                 var oModel = new JSONModel(sap.ui.require.toUrl("pagto/mock/payments.json"));
+			    // eslint-disable-next-line no-mixed-spaces-and-tabs
 			    this.getView().setModel(oModel);
             },
             onListItemPress: function (oEvent) {
-			    MessageToast.show("Pressed : " + oEvent.getSource().getTitle());
+                
+                MessageToast.show("Pagamento Enviado : " + oEvent.getSource().getTitle() + oEvent.getSource().getTitle());
 		    }
 		});
     });

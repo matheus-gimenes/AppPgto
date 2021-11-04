@@ -15,15 +15,15 @@
 		items="{/PaymentsCollection}"
 		headerText="Pagamentos Pendentes">
 		<ObjectListItem
-			title="{Name}"
+			title="{Empresa} - {Favorecido}"
 			type="Active"
 			press="onListItemPress"
 			number="{
-				parts:[{path:'Price'},{path:'CurrencyCode'}],
+				parts:[{path:'Valor'},{path:'Moeda'}],
 				type: 'sap.ui.model.type.Currency',
 				formatOptions: {showMeasure: false}
 			}"
-			numberUnit="{CurrencyCode}">
+			numberUnit="{Moeda}">
 			<firstStatus>
 				<ObjectStatus
 					text="{Status}"
@@ -32,8 +32,8 @@
 						formatter: 'pagto.controller.Formatter.status'
 					}" />
 			</firstStatus>
-			<ObjectAttribute text="{WeightMeasure} {WeightUnit}" />
-			<ObjectAttribute text="{Width} x {Depth} x {Height} {DimUnit}" />
+            <ObjectAttribute text="Banco: {Banco} Agencia: {Agencia} Conta: {Conta}" />
+			<ObjectAttribute text="Vencimento {Vencimento}" />
 		</ObjectListItem>
 	</List>
                         </content>
