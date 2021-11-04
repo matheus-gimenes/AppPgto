@@ -15,7 +15,7 @@
 		items="{/PaymentsCollection}"
 		headerText="Pagamentos Pendentes">
 		<ObjectListItem
-			title="{Favorecido} - {Empresa}"
+			title="{Empresa} - {Favorecido}"
 			type="Active"
 			press="onListItemPress"
 			number="{
